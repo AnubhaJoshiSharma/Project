@@ -54,6 +54,7 @@ public class BaseClass {
 			break;
 		
 		default:
+			System.out.println("Invalid Browser name provided. We support only firefox and chrome");
 			throw new IllegalArgumentException();  
 		}
 		getDriver().get(ConfigReader.readAppUrl());
